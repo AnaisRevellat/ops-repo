@@ -43,4 +43,4 @@ jobs:
           context: ./client
           file: ./client/Dockerfile
           push: true
-          tags: ${{ secrets.LOGIN }}/${{ secrets.DOCKER_HUB_CLIENT_IMAGE_NAME }}:latest
+          tags: ${{ secrets.LOGIN }}/${{ secrets.DOCKER_HUB_SERVER_IMAGE_NAME }}:latest
