@@ -1,6 +1,6 @@
 
 # .github/workflows/staging-client.yml
-name: Compile and push client image
+name: Compile and push server image
 
 # Controls when the workflow will run
 on:
@@ -40,7 +40,7 @@ jobs:
       - uses: docker/build-push-action@v2
         name: Build and push
         with:
-          context: ./client
-          file: ./client/Dockerfile
+          context: ./server
+          file: ./server/Dockerfile
           push: true
           tags: ${{ secrets.LOGIN }}/${{ secrets.DOCKER_HUB_SERVER_IMAGE_NAME }}:latest
