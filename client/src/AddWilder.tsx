@@ -11,7 +11,7 @@ mutation AddWilderMutation($addWilderWilder: WilderInput!) {
   }
 }`;
 
-//commentaire test
+//commentaire testtttt
 
 
 function AddWilder() {
